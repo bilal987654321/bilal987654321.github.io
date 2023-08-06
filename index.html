@@ -3,48 +3,70 @@
 <head>
   <title>Le Jeu des Points</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
-<body>
-  <h1>collectez 100 et gagnez</h1>
-  <div class="game-container">
-    <div class="player" id="player-1">
-      <div class="player-info">
-        <p>Joueur 1</p>
-        <p>GLOBAL: <span id="global-score-1">0</span></p>
-      </div>
-    </div>
-    <div class="player-action-1">
-      <p>ROUND: <span id="round-score-1">0</span></p>
-    </div>
-    <div class="middle">
-      <button id="new-game">Nouvelle Partie</button> 
-    </div>
-    <div class="custom-button">
-      <img src="" alt="Dice Result" id="dice-result">
-        <button id="roll-hold">Lancer le Dé</button>
-    </div>
-    <div class="cust-button">
-        <button id="hold-1">Hold-1</button>
-        <button id="hold-2">Hold-2</button>
-    </div>
-    
-    <div class="player-2" id="player-2">
-      <div class="player-info">
-        <p>Joueur 2</p>
-        <p>GLOBAL: <span id="global-score-2">0</span></p>
-      </div>
-    </div>
-    <div class="player-action-2">
-      <p>ROUND: <span id="round-score-2">0</span></p>
-    </div>
-  </div>
+<body class="text-bg-dark p-3">
+  <div class="container mt-5">
+    <h1 class=" mb-5 fs-2 fst-italic badge bg-primary text-wrap">collectez 100 et gagnez</h1>
+    <div class="row">
+          <div class="col-md-3 order-md-1 mb-5 ">
+            <div class="p-3 text-info-emphasis bg-info-subtle border border-info-subtle rounded-3">
+              <div class="player" id="player-1">
+                <div class="player-info">
+                    <p>Joueur 1</p>
+                    <p>GLOBAL: <span id="global-score-1">0</span></p>
+         </div>
+             </div>
+              </div>
+          </div>
+          <div class=" col-md-3 order-md-2 mx-auto mb-3">
+            <button type="button" class="btn btn-primary btn-lg" id="new-game">Nouvelle Partie</button> 
+          </div>
+           <div class="col-md-3 order-md-3 mb-5">
+            <div class="p-3 text-info-emphasis bg-info-subtle border border-info-subtle rounded-3">
+              <div class="player-2" id="player-2">
+                <div class="player-info">
+                  <p>Joueur 2</p>
+                  <p>GLOBAL: <span id="global-score-2">0</span></p>
+                </div>
+              </div>
+               </div>
+          </div>
+       </div>
+    <div class="row">
+      <div class="col-md-0 col-md-3 order-md-1 mb-3">
+        <div class="p-3 text-info-emphasis bg-info-subtle border border-info-subtle rounded-3">
+          <div class="player-action-1">
+            <p>ROUND: <span id="round-score-1">0</span></p>
+          </div>
+      </div>   
 
- 
+       </div>
+       <div class="col-md-0 col-md-3 order-md-2 mx-auto">
+        <img src="" alt="Dice Result" id="dice-result">
+          <button  class="btn btn-danger" id="roll-hold">Lancer le Dé</button>
+      </div> 
+       <div class="col-md-0 col-md-3 order-md-3 mb-3">
+        <div class="p-3 text-info-emphasis bg-info-subtle border border-info-subtle rounded-3">
+          <div class="player-action-2">
+            <p>ROUND: <span id="round-score-2">0</span></p>
+          </div>
+           </div>
+      
+    </div>
+    </div>
+    <div class="btnhold">
+      <button class="btn btn-danger" id="hold-1">Hold-1</button>
+      <button class="btn btn-danger" id="hold-2">Hold-2</button>
+  </div>          
+      
+    </div> 
   <div class="player-winner">
     <h1 id="winner"></h1>
   </div>
-
+</div>
   <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 </html>
 

@@ -41,7 +41,7 @@ function init() {
 }
 
 function rollDice(playerNum) {
-    let dice = Math.floor((Math.random() * 1000) % 6) + 3;
+    let dice = Math.floor((Math.random() * 1000) % 6) + 1;
     let diceDOM = document.getElementById('dice-result');
     diceDOM.style.display = 'block';
     diceDOM.src = 'img/dice-' + dice + '.png';
